@@ -1,7 +1,7 @@
 # Behavioural contracts
 The following document is just a brain dump of how to isolate behaviour from low level implementation details. This ideas tries to define some high level concepts to bundle behaviour that is self contained and can be (automated) executed in an autonomous way. 
 
-Following the practices of BPM, decision management, case management and using rule engines,  Complex Event Processing, they all follow the same lifecycle which has clear limits between the authoring phase and the execution phase. With the rise of microservices, continuous deployments these lines (usually barriers) need to go down. We are finally getting close to shop software quite fast, that means that From modelling to runtime needs to be fast, we cannot slow down other initiatives. 
+Following the practices of BPM, decision management, case management, using rule engines and Complex Event Processing, they all follow the same lifecycle which has clear limits between the authoring phase and the execution phase. With the rise of microservices, continuous deployments these lines (usually barriers) need to go down. We are finally getting close to shop software quite fast, that means that From modelling to runtime needs to be fast, we cannot slow down other initiatives. 
 
 All these business models (processes, rules, cases, decisions) depends on a domain model to work, so there must be a clear interface between our domain models and our business models. Domain models require validations when they are used or referenced in our business models. 
 
